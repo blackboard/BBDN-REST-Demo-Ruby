@@ -50,6 +50,6 @@ To run the code, ensure you have followed the steps to configure the sample code
 19. Delete the Term
 20. Delete the Datasource
 
-	
+
 ### Conclusion
-This code will give you the base knowledge you need to interact with the Blackboard Learn REST services using Ruby. For a thorough walkthrough of this code, visit the corresponding Community page <a href="https://community.blackboard.com/community/developers/rest" target="_blank">here</a>.
+This code will give you the base knowledge you need to interact with the Blackboard Learn REST services using Ruby. For a thorough walkthrough of this code, visit the corresponding Community page <a href="https://community.blackboard.com/docs/DOC-1689" target="_blank">here</a>.
