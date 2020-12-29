@@ -1,9 +1,9 @@
 require 'rest-client'
 require 'json'
 
-$HOSTNAME = 'https://devcon.blackboard.com'
-$KEY = 'd03caa33-1095-47b9-bc67-f5cd634430b1'
-$SECRET = 'QSFClAMu5KmoG8yFbHTi7pjhsseJl4uz'
+$HOSTNAME = 'https://my.learn.edu'
+$KEY = 'insert_your_key'
+$SECRET = 'insert_your_secret'
 
 
 $AUTH_PATH = $HOSTNAME + '/learn/api/public/v1/oauth2/token';
