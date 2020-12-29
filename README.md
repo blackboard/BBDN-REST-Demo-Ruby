@@ -1,7 +1,14 @@
 # BBDN-REST-Demo-Ruby
-This project contains sample code for interacting with the Blackboard Learn REST Web Services in Ruby. This sample was built with Ruby 2.0.0p645. It uses the rest-client gem for HTTP processing.
+This project contains sample code for interacting with the Blackboard Learn REST Web Services in Ruby. This sample was built with Ruby 3.0.0p0. It uses the rest-client gem for HTTP processing.
 
 ###Project at a glance:
+- Target: Blackboard Learn SaaS 2015.12.0 and above
+- Source Release: v2.0
+- Release Date  2020-12-29
+- Author: shurrey
+- Tested on Blackboard Learn SaaS Release 3900.2.0-rel.34+4ad580a
+- Updated for Ruby 3
+
 - Target: Blackboard Learn SaaS 2015.12.0 and above
 - Source Release: v1.0
 - Release Date  2016-03-15
@@ -9,7 +16,7 @@ This project contains sample code for interacting with the Blackboard Learn REST
 - Tested on Blackboard Learn SaaS Release 2015.12.0-ci.16+149e9d4
 
 ###Requirements:
-- Ruby - This sample was built with Ruby 2.0.0p645
+- Ruby - This sample was built with Ruby 3.0.0p0
 - Requires the following libraries:
 -- rest-client, installed with <i>sudo gem install rest-client</i>
 
@@ -52,4 +59,4 @@ To run the code, ensure you have followed the steps to configure the sample code
 
 
 ### Conclusion
-This code will give you the base knowledge you need to interact with the Blackboard Learn REST services using Ruby. For a thorough walkthrough of this code, visit the corresponding Community page <a href="https://community.blackboard.com/docs/DOC-1689" target="_blank">here</a>.
+This code will give you the base knowledge you need to interact with the Blackboard Learn REST services using Ruby. For a thorough walkthrough of this code, visit the corresponding Developer Documentation page <a href="https://docs.blackboard.com/learn/rest/examples/ruby-demo" target="_blank">here</a>.

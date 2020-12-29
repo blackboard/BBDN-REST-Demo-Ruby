@@ -1,9 +1,9 @@
 require 'rest-client'
 require 'json'
 
-$HOSTNAME = 'http://localhost:9876'
-$KEY = '<insert your key>'
-$SECRET = '<insert your secret>'
+$HOSTNAME = 'https://devcon.blackboard.com'
+$KEY = 'd03caa33-1095-47b9-bc67-f5cd634430b1'
+$SECRET = 'QSFClAMu5KmoG8yFbHTi7pjhsseJl4uz'
 
 
 $AUTH_PATH = $HOSTNAME + '/learn/api/public/v1/oauth2/token';
@@ -97,7 +97,7 @@ begin
         end
       }
     
-  payload = "{ \"userId\" : \"" + $user_id + "\", \"courseId\" : \"" + $course_id + "\", \"courseRoleId\" : \"Student\", \"dataSourceId\" : \"" + $dsk_id + "\", \"availability\" : { \"available\" : \"Yes\" } }"
+  payload = "{ \"courseRoleId\" : \"Student\", \"dataSourceId\" : \"" + $dsk_id + "\", \"availability\" : { \"available\" : \"Yes\" } }"
 
   
       RestClient.put($COURSE_PATH + $course_id + '/users/' + $user_id, payload, :content_type => :json, :accept => :json, :Authorization => $auth){ |response, request, result, &block|
@@ -188,7 +188,7 @@ begin
       end
     }
 
-  payload = "{ \"externalId\" : \"BBDN-Java-Ruby-Demo\", \"courseId\" : \"BBDN-Java-Ruby-Demo\", \"name\" : \"Course Used For REST Demo - Ruby\", \"description\" : \"Updated Course Used For REST Demo - Ruby\", \"allowGuests\" : \"true\", \"readOnly\" : \"false\", \"termId\" : \"" + $term_id + "\", \"dataSourceId\" : \"" + $dsk_id + "\", \"availability\" : { \"available\" : \"Yes\" } }"
+  payload = "{ \"externalId\" : \"BBDN-Java-Ruby-Demo\", \"courseId\" : \"BBDN-Java-Ruby-Demo\", \"name\" : \"Course Used For REST Demo - Ruby\", \"description\" : \"Updated Course Used For REST Demo - Ruby\", \"allowGuests\" : \"false\", \"readOnly\" : \"false\", \"termId\" : \"" + $term_id + "\", \"dataSourceId\" : \"" + $dsk_id + "\", \"availability\" : { \"available\" : \"Yes\" } }"
 
     RestClient.patch($COURSE_PATH + $course_id, payload, :content_type => :json, :accept => :json, :Authorization => $auth){ |response, request, result, &block|
     case response.code
